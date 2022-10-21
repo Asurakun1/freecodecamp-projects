@@ -1,0 +1,128 @@
+** start of undefined **
+
+<!DOCTYPE html>
+
+<html lang = "en">
+  <head>
+    <meta charset="UTF-8">
+    <title>サーベイプロジェクト</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id = "title">サーベイプロジェクト</h1>
+    <p id = "description">自分のサーベイプロジェクト</p>
+    <form id = "survey-form">
+      <fieldset>
+        <label id = "name-label">
+          お名前は？
+          <input id = "name" type = "text" required placeholder = "俺はアスラくんです"/>
+        </label>
+
+        <label id = "email-label">
+        メール
+          <input id = "email" type = "email" required placeholder = "アスラくん＠gmail.com"/>
+        </label>
+
+        <label id = "number-label">
+          何歳ですが？
+          <input id = "number" type = "number" required min = "13" max = "99" placeholder = "25"/>
+        </label>
+          何かいいか？
+          <select id = "dropdown"> 
+            <option value = "">なし</option>
+            <option　value = "1"> 一個</option>
+            <option value = "2">第二</option>
+          </select>
+      </fieldset>
+
+      <fieldset>
+      
+      <label>
+        <input value = "n1" name = "feeling" id = "happy" type = "radio" class = "inline"/>嬉しい
+      </label>
+      <label>
+        <input value = "n2" name = "feeling" id = "frusturating" type ="radio" class = "inline"/>悔しい
+      </label>
+      </fieldset>
+
+      <fieldset>
+        あなた何を好きですか？
+        <label>
+          <input type = "checkbox" value = "value" class = "inline">ゲーム
+        </label>
+        <label>
+          <input type = "checkbox" value = "value" class = "inline">歌
+        </label>
+        <label>
+          <input type = "checkbox" value = "value" class = "inline">買い物
+        </label>
+        <label>
+          <input type = "checkbox" value = "value" class = "inline">戦え
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <textarea placeholder = "一言。。。">
+        </textarea>
+      </fieldset>
+
+      <fieldset>
+        <input type = "submit" value = "submit" id = "submit">
+      </fieldset>
+    </form>
+
+  </body>
+  
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #300004;
+ color: white;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+label{
+  display: block;
+  margin: 0.5rem 0;
+}
+
+fieldset{
+  border: none;
+  padding: 2em 0;
+  
+}
+
+input, select{
+  margin: 10px 0 0 0;
+  width: auto;
+  min-height: 2em;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+** end of undefined **
+
